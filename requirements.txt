@@ -6,4 +6,3 @@ faster-whisper
 torch
 torchvision
 torchaudio
-audioop-lts
