@@ -23,7 +23,7 @@ class ProfanityMuterApp:
         self.dark_var = tk.BooleanVar(value=True)
         self.verbose_var = tk.BooleanVar(value=False)
         self.enhance_var = tk.BooleanVar(value=False)
-        self.merge_var = tk.BooleanVar(value=True)           # NEW: Merge with built-in list
+        self.merge_var = tk.BooleanVar(value=True)
         self.beam_var = tk.IntVar(value=5)
 
         self.input_path = tk.StringVar()
@@ -124,7 +124,7 @@ class ProfanityMuterApp:
         self.update_labels()
         self.toggle_dark_mode()
 
-    # ==================== Rest of GUI methods (unchanged except run_cli) ====================
+
 
     def apply_theme(self):
         self.style.theme_use('clam')
@@ -188,7 +188,7 @@ class ProfanityMuterApp:
 
     def start_processing(self):
         if self.processing: return
-        # ... (same validation as before) ...
+
 
         self.cancel_flag.set(False)
         self.processing = True
