@@ -140,7 +140,7 @@ Run the GUI from that folder.
 Ensure FFmpeg and MKVToolNix are installed and added to your system PATH.
 Restart your terminal / computer after installing.
 
-3. Process exits with code 3221226505 (Windows only)
+3. GUI Process exits with code 3221226505 (Windows only)
 
 This is usually caused by large output from ffmpeg.
 Solution: Keep Verbose logging unchecked (uses --quiet mode).
