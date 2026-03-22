@@ -1,0 +1,11 @@
+# profanity-muter requirements (CPU version by default)
+# For NVIDIA GPU + CUDA support, run the special torch command in requirements.md FIRST,
+# then this file will skip torch (already satisfied).
+
+faster-whisper
+torch
+torchvision
+torchaudio
+moviepy
+pydub
+audioop-lts
