@@ -29,10 +29,60 @@ Built with faster-whisper + FFmpeg. Runs entirely on your machine — no data le
 - MKVToolNix (`mkvmerge` must be in PATH — required for .mkv files)
 - GPU recommended (CUDA) for best performance
 
+
+---
+
+### Setup Guide (Recommended: Using Virtual Environment)
+
+#### 1. Clone or Download the Project
+Download or clone the project folder containing:
+- `mute_profanity.py`
+- `mute_profanity_gui.py`
+- `README.md`
+
+
+
+
+#### 2. Create a Virtual Environment
+
+Open a terminal / command prompt in the project folder and run:
+
 ```bash
-pip install faster-whisper torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+# Create virtual environment
+python -m venv venv
+
+# Activate the virtual environment
+
+# Windows:
+venv\Scripts\activate
+
+# macOS / Linux:
+source venv/bin/activate
+
 
 ```
+
+### 3. Install Dependencies
+
+```bash
+# Upgrade pip first
+pip install --upgrade pip
+
+# Install required packages
+pip install faster-whisper torch torchvision torchaudio
+
+# For NVIDIA GPU users (CUDA 12.8 recommended):
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+```
+
+### 4. Install System Dependencies
+
+4. Install System Dependencies
+
+FFmpeg: Download from https://ffmpeg.org/download.html or use your package manager (winget install ffmpeg, apt install ffmpeg, etc.)
+MKVToolNix: Download from https://mkvtoolnix.download/ (make sure mkvmerge is in your PATH)
+
+
 
 # Quick Start
 
@@ -43,15 +93,17 @@ Click Start Processing.
 
 Tip: Keep "Merge with built-in list" enabled and try Dialogue Enhancement + Beam Size 7 for best results.
 
+Run gui.bat for windows clients, it will load a fully featured GUI with all of the options included in this script.
+
 ### Main Options Explained
 
 
- - Whisper | Model large-v3 recommended for best accuracy
- - Beam Size | Higher = better detection, slower (5–10 is good balance)
- - Dialogue Enhancement | Applies filters to clean audio before transcription (often helps catch more)
- - Safe Mode | Uses subtitles to mute full sentences when Whisper misses profanity
- - Merge with built-in list | Combines your custom words with built-in list + variants
- - Verbose Logging | Shows full ffmpeg output (useful for debugging)
+ - **Whisper | Model large-v3 recommended for best accuracy
+ - **Beam Size | Higher = better detection, slower (5–10 is good balance)
+ - **Dialogue Enhancement | Applies filters to clean audio before transcription (often helps catch more)
+ - **Safe Mode | Uses subtitles to mute full sentences when Whisper misses profanity
+ - **Merge with built-in list | Combines your custom words with built-in list + variants
+ - **Verbose Logging | Shows full ffmpeg output (useful for debugging)
 
 
 ### Custom Word List Format
