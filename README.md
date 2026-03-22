@@ -127,6 +127,67 @@ Cannot achieve 100% detection due to limitations of local Whisper models
 Mutes (silence) rather than replacing with bleeps or cutting
 Performance depends on your hardware (GPU strongly recommended for large-v3)
 
+---
+### Troubleshooting
+Common Issues & Solutions
+1. "mute_profanity.py not found" error
+
+Make sure both mute_profanity.py and mute_profanity_gui.py are in the same folder.
+Run the GUI from that folder.
+
+2. FFmpeg or mkvmerge "command not found"
+
+Ensure FFmpeg and MKVToolNix are installed and added to your system PATH.
+Restart your terminal / computer after installing.
+
+3. Process exits with code 3221226505 (Windows only)
+
+This is usually caused by large output from ffmpeg.
+Solution: Keep Verbose logging unchecked (uses --quiet mode).
+Try enabling Dialogue Enhancement — it often reduces output noise.
+
+4. Whisper crashes or runs out of memory
+
+Use a smaller model (medium or large-v2 instead of large-v3)
+Lower Beam Size to 5
+Close other GPU-heavy applications
+Disable Dialogue Enhancement temporarily
+
+5. Very few or no profanities detected
+
+Try enabling Dialogue Enhancement
+Increase Beam Size to 7 or 10
+Use large-v3 model
+Check your custom word list and ensure "Merge with built-in list" is enabled
+
+6. Safe Mode not adding any blocks
+
+Make sure your video has English subtitles
+Enable Validate to see the comparison numbers
+Try a higher Beam Size or enable Dialogue Enhancement
+
+7. GUI looks broken or buttons are misaligned
+
+Try switching Dark Mode on/off
+Resize the window slightly
+
+8. Slow processing
+
+Use distil-large-v3 or large-v3-turbo for faster speed (slightly lower accuracy)
+Lower Beam Size
+Disable Dialogue Enhancement
+
+9. Custom word list not working
+
+Make sure the file is plain text (.txt)
+One word or phrase per line
+Lines starting with # are treated as comments
+
+10. Temp files not cleaning up
+
+This is normal if the program crashes. You can safely delete any temp_audio_*.flac or temp_subs_*.srt files manually.
+
+---
 
 ### Acknowledgments
 
