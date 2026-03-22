@@ -30,4 +30,4 @@ Built with faster-whisper + FFmpeg. Runs entirely on your machine — no data le
 - GPU recommended (CUDA) for best performance
 
 ```bash
-pip install faster-whisper torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+pip install faster-whisper torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
