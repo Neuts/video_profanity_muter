@@ -77,7 +77,6 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 
 ### 4. Install System Dependencies
 
-4. Install System Dependencies
 
 FFmpeg: Download from https://ffmpeg.org/download.html or use your package manager (winget install ffmpeg, apt install ffmpeg, etc.)
 MKVToolNix: Download from https://mkvtoolnix.download/ (make sure mkvmerge is in your PATH)
