@@ -11,7 +11,7 @@ pip install -r requirements.txt
 
 # 3\. (Optional but recommended) GPU users only:
 
-# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu130
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
 
 # (run this BEFORE the line above if you have CUDA)
 
