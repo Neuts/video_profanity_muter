@@ -6,6 +6,4 @@ faster-whisper
 torch
 torchvision
 torchaudio
-moviepy
-pydub
 audioop-lts
