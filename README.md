@@ -126,6 +126,7 @@ Both scripts are marked stable and ready for regular use.
 Cannot achieve 100% detection due to limitations of local Whisper models
 Mutes (silence) rather than replacing with bleeps or cutting
 Performance depends on your hardware (GPU strongly recommended for large-v3)
+This script works for English audio and subtitles only. Much more work required to add multi-language support.
 
 ---
 ### Troubleshooting
