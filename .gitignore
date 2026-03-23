@@ -1,0 +1,23 @@
+# Virtual environment
+venv/
+
+# Python bytecode & caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Script temporary files (in case of crash)
+temp_*.wav
+temp_*.srt
+*.tmp.mkv
+*.clean.mkv
+
+# OS junk
+.DS_Store
+Thumbs.db
+*.log
+
+# Editor leftovers
+.vscode/
+.idea/
+EOF
