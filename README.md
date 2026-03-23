@@ -97,12 +97,12 @@ Run gui.bat for windows clients, it will load a fully featured GUI with all of t
 ### Main Options Explained
 
 
- - **Whisper | Model large-v3 recommended for best accuracy
- - **Beam Size | Higher = better detection, slower (5–10 is good balance)
- - **Dialogue Enhancement | Applies filters to clean audio before transcription (often helps catch more)
- - **Safe Mode | Uses subtitles to mute full sentences when Whisper misses profanity
- - **Merge with built-in list | Combines your custom words with built-in list + variants
- - **Verbose Logging | Shows full ffmpeg output (useful for debugging)
+ - Whisper | Model large-v3 recommended for best accuracy
+ - Beam Size | Higher = better detection, slower (5–10 is good balance)
+ - Dialogue Enhancement | Applies filters to clean audio before transcription (often helps catch more)
+ - Safe Mode | Uses subtitles to mute full sentences when Whisper misses profanity
+ - Merge with built-in list | Combines your custom words with built-in list + variants
+ - Verbose Logging | Shows full ffmpeg output (useful for debugging)
 
 
 ### Custom Word List Format
