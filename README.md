@@ -86,7 +86,7 @@ MKVToolNix: Download from https://mkvtoolnix.download/ (make sure mkvmerge is in
 # Quick Start
 
 Place mute_profanity.py and mute_profanity_gui.py in the same folder.
-Run the GUI:Bashpython mute_profanity_gui.py
+Run the GUI: Bash python mute_profanity_gui.py
 Select input video(s), output location, and desired options.
 Click Start Processing.
 
